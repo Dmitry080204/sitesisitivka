@@ -3,6 +3,7 @@
 
 <head>
     <title>Моя візитівка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
         body {
             text-align: center;
@@ -52,6 +53,18 @@
             width: 80%;
             margin-top: 10px;
         }
+
+        @media screen and (max-width: 768px) {
+            section {
+                flex-basis: calc(50% - 40px);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            section {
+                flex-basis: calc(100% - 40px);
+            }
+        }
     </style>
 </head>
 
@@ -61,18 +74,18 @@
     </header>
 
     <section>
-        <img src="img/dobr.jpg" alt="">
-        <p>Привіт мене звати Дмитро і сьогодні я розповім трішечки про себе.Навчаюсь в Херсонському Державному Університеті, на факультеті Комп'ютерні науки фізики та математики.</p>
+        <img src="fon.jpg" alt="Фотографія">
+
+        <p>Привіт мене звати Дмитро і сьогодні я розповім трішечки про себе. Навчаюсь в Херсонському Державному Університеті, на факультеті Комп'ютерні науки фізики та математики.</p>
     </section>
 
     <section>
-        <p></p>
         <p>Саме цю професію я обрав через свою цікавість змалечку до всіляких пристроїв, ігор, різноманітних програм. Моя мрія - навчитися створювати різноманітні програми, які були б корисні для користувачів.</p>
-        
+        <input type="email" placeholder="Оцініть будь-ласка сторінку">
     </section>
 
-    <section>Навички:Python,C++,C#</section>
-    <section>Kонтакти:dimamishchenko222@gmail.com,+380955918656</section>
+    <section>Навички: Python, C++, C#</section>
+    <section>Контакти: dimamishchenko222@gmail.com, +380955918656</section>
 </body>
 
 </html>
